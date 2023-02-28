@@ -1,0 +1,14 @@
+.Comment......
+        START   100
+        LDX     LBL
+TEST    LDA     @LBL
+        +LDA    LBL
+UP      STB     #LBL
+BEG     LDA     #NLB
+LBL     WORD    50
+        RESW    12
+NLB     RESW    100
+TEST    RESB    1
+        WORD    142
+        WORD    97
+        END
